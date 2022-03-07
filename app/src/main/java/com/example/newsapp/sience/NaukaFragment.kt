@@ -1,4 +1,4 @@
-package com.example.newsapp.main_ui
+package com.example.newsapp.sience
 
 import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
@@ -20,35 +20,32 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class News_Fragment : Fragment() {
+class NaukaFragment : Fragment() {
 
     companion object {
-        fun newInstance() = News_Fragment()
+        fun newInstance() = NaukaFragment()
     }
 
-    private lateinit var viewModel: NewsViewModel
-
+    private lateinit var viewModel: NaukaViewModel
     lateinit var recyclerview: RecyclerView
-    lateinit var adapter: CustomAdapter
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
+        val v = inflater.inflate(R.layout.nauka_fragment, container, false)
 
-
-        val v = inflater.inflate(R.layout.news__fragment, container, false)
-
-        recyclerview = v.findViewById(R.id.recycler)
+        recyclerview = v.findViewById(R.id.recNauka)
 
         recyclerview.layoutManager = GridLayoutManager(requireContext(),1)
 
-
         val ss =  Ssylka.allUsers
-        Log.d("russs1111222","OnResponse Success ${ss}")
 
-
-        val apiInterface = ApiInterface.create().getNews(ss,100,ApiInterface.API_KEY)
+        val apiInterface = ApiInterface.create().getNewsCategory(ss,
+            ApiInterface.SCIENCE,100,
+            ApiInterface.API_KEY)
 
         apiInterface.enqueue( object : Callback<News>, CustomAdapter.ItemClickListener {
             override fun onResponse(call: Call<News>?, response: Response<News>?) {
@@ -65,23 +62,21 @@ class News_Fragment : Fragment() {
             }
 
             override fun onItemClick(title: String) {
-//
                 val inten =  Intent(context, WebViewActivity::class.java)
                 inten.putExtra("url", title)
                 startActivity(inten)
-
-
             }
 
 
         })
+
 
         return v
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(NewsViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(NaukaViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

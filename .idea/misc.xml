@@ -4,10 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/drawable/dot.xml" value="0.126" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/details_news_fragment.xml" value="0.29322916666666665" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/item_news.xml" value="0.33" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/news__fragment.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/drawable/news.xml" value="0.2465" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/drawable/robot.xml" value="0.2465" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/drawable/sports.xml" value="0.2465" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_splash.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_web_view.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/biznes_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/details_news_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/entertainment_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_nauka.xml" value="0.3415384615384615" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/health_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/item_news.xml" value="0.25588235294117645" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/nauka_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/news__fragment.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/poisk_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/robot_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/layout/sports_fragment.xml" value="0.3252032520325203" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/NewsApp/app/src/main/res/menu/menu.xml" value="0.2784615384615385" />
       </map>
     </option>
   </component>

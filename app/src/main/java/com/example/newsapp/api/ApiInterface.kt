@@ -13,6 +13,23 @@ interface ApiInterface {
     @GET("v2/top-headlines")
     fun getNews(
         @Query("country") country: String,
+        @Query("pageSize") pageSize: Int,
+        @Query("apiKey") key: String
+    ) : Call<News>
+
+
+    @GET("v2/top-headlines")
+    fun getNewsCategory(
+        @Query("country") country: String,
+        @Query("category") category: String,
+        @Query("pageSize") pageSize: Int,
+        @Query("apiKey") key: String
+    ) : Call<News>
+
+
+    @GET("v2/everything")
+    fun getSearch(
+        @Query("q") country: String,
         @Query("apiKey") key: String
     ) : Call<News>
 
@@ -23,6 +40,13 @@ interface ApiInterface {
         var API_KEY = "3464309b9de34655858ed117d543e8be"
         var RUSSIA = "ru"
         var USA = "us"
+        var BIZNESS = "business"
+        var VIDEO = "entertainment"
+        var MAIN = "general"
+        var HEALTH = "health"
+        var SCIENCE = "science"
+        var SPORT = "sports"
+        var TECHNOLOGY = "technology"
 
         fun create() : ApiInterface {
 
