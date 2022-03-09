@@ -10,7 +10,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recHealth"
-        android:layout_width="412dp"
+        android:layout_width="390dp"
         android:layout_height="653dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
